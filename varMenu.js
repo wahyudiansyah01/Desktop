@@ -1,7 +1,5 @@
 var menu450 = new Menu(null)
         var node = document.getElementById("foto1").getElementsByTagName("a");
-        var parent = null
-        
         //mengambil link sebagai id
        for (i = 0; i < node.length; i++) {
            var padd = node[i].parentNode.style.paddingLeft;

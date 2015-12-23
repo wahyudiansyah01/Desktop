@@ -32,11 +32,6 @@ this.expand = function(){
 };
 
 this.collapse = function(){
-document.getElementById("foto").appendChild(this.node);
-console.log(this.node);
-};
-
-this.hide = function(){
-
+this.node.classList.remove("hidden");
 };
 }
