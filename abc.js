@@ -1,7 +1,6 @@
-function Menu (parent,name,link){
+function Menu (parent,nodes){
 this.parent = parent;
-this.name = name;
-this.link = link;
+this.node = nodes;
 this.child = [];
 this.mark = 0;
 //tambahkan object ini ke parent
@@ -18,15 +17,13 @@ this.show = function(){
     }
 };
 
-this.expand = function(padding){
-    if(!padding){
-        padding = 8;
-    }
+this.expand = function(){
+    
     var i = 0;
     do {
-            this.child[i].collapse(padding);
+            this.child[i].collapse();
             if(this.child[i].mark == 1){
-                if(this.child[i].child.length > 0){ this.child[i].expand(padding+40)}
+                if(this.child[i].child.length > 0){ this.child[i].expand()}
             }
             i++;
         }
@@ -34,9 +31,9 @@ this.expand = function(padding){
     
 };
 
-this.collapse = function(padding){
-console.log("show "+this.name);
-$("#foto").append("<tr><td style='padding-left: "+padding+"px;'><a href='"+this.link+"'>"+this.name+"</></td></tr>");
+this.collapse = function(){
+document.getElementById("foto").appendChild(this.node);
+console.log(this.node);
 };
 
 this.hide = function(){

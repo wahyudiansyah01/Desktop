@@ -1,29 +1,16 @@
-var menu450 = new Menu(null,"foto");
-var menu271 = new Menu(menu450,"Kamera Digital","../271-jual-kamera-camcorder");
-    var menu684 = new Menu(menu271,"Kamera DSLR");
-    var menu685 = new Menu(menu271,"Kamera Mirrorless");
-    var menu686 = new Menu(menu271,"Kamera Pocket");
-    var menu687 = new Menu(menu271,"Kamera Prosumer");
-    var menu688 = new Menu(menu271,"Kamera Waterproof");
-var menu153 = new Menu(menu450,"Video Camcorder","../153-camcorder");
-    var menu631 = new Menu(menu153,"Action Camcorder");
-    var menu692 = new Menu(menu153,"Personal Camcorder");
-    var menu693 = new Menu(menu153,"Profesional Camcorder");
-    var menu694 = new Menu(menu153,"Semi Pro Camcorder");
-var menu390 = new Menu(menu450,"Lensa Kamera","../390-lensa");
-    var menu391 = new Menu(menu390,"Canon");
-    var menu393 = new Menu(menu390,"Nikon");
-    var menu708 = new Menu(menu390,"Fujifilm");
-    var menu709 = new Menu(menu390,"Olympus");
-    var menu396 = new Menu(menu390,"Sony");
-    var menu394 = new Menu(menu390,"Pentax");
-    var menu395 = new Menu(menu390,"Samsung");
-    var menu716 = new Menu(menu390,"Samyang");
-    var menu397 = new Menu(menu390,"Tamron");
-    var menu715 = new Menu(menu390,"Lensbaby");
-var menu695 = new Menu(menu450,"Flash Kamera","../695-flash-kamera");
-    var menu723 = new Menu(menu695,"Canon");
-    var menu718 = new Menu(menu695,"Fujifilm");
-    var menu724 = new Menu(menu695,"Nikon");
-    var menu720 = new Menu(menu695,"Sony");
-    var menu720 = new Menu(menu695,"Sigma");
+var menu450 = new Menu(null)
+        var node = document.getElementById("foto1").getElementsByTagName("a");
+        var parent = null
+        
+        //mengambil link sebagai id
+       for (i = 0; i < node.length; i++) {
+           var padd = node[i].parentNode.style.paddingLeft;
+           var id = node[i].getAttribute("href").match(/\d+/)[0];
+           
+           if(padd=="8px"){
+           eval("var menu"+id+" = new Menu(menu450,node[i].parentNode.parentNode)");
+           }
+           if(padd=="40px"){
+           eval("var menu"+id+" = new Menu(menu450.child[menu450.child.length - 1],node[i].parentNode.parentNode)");
+           }
+           }
