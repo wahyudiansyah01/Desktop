@@ -1,20 +1,22 @@
-<!doctype HTML>
-<html>
-    <head>
-        <script src="jquery-1.11.3.js" type="text/javascript"></script>
-        <script src="https://rawgit.com/wahyudiansyah01/Desktop/master/abc.js" type="text/javascript"></script>
-        <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<script src="https://rawgit.com/wahyudiansyah01/Desktop/master/abc.js"></script>
+<script>// <![CDATA[
+$("head").append("<style>.accordion-toggle {cursor: pointer;} .accordion-content {display: none;} .accordion-content.default {display: block;}</style>");
+$(document).ready(function($) {
+$(".accordion-content").css("display","none");
+$(".accordion-content.default").css("display","block");
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+ $('#accordion').find('.accordion-toggle').click(function(){
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-            
-    </head>
-    <body>
-       <div id="accordion">
+ //Expand or collapse this panel
+ $(this).next().slideToggle('fast');
+
+ //Hide the other panels
+// $(".accordion-content").not($(this).next()).slideUp('fast');
+
+ });
+ });
+// ]]></script>
+<div id="accordion">
 <div class=" block block-highlighted">
 <h4 class="title_block accordion-toggle"><span class="fa fa-bars"> </span><span> Kategori Produk</span></h4>
 <div class="block_content accordion-content default">
@@ -183,7 +185,40 @@
 </table>
 </div>
 </div>
-<div class="block block-highlighted">
+<div class="block block-highlighted hidden" id="topbrand153">
+<h4 class="title_block accordion-toggle"><span class="fa fa-bars"> </span><span> Top Brand</span></h4>
+<div class="block_content accordion-content">
+<table class="table">
+<tbody>
+<tr>
+<td><a href="../385-canon"> Canon</a></td>
+</tr>
+<tr>
+<td><a href="../384-brica"> Brica</a></td>
+</tr>
+<tr>
+<td><a href="../386-jvc"> JVC</a></td>
+</tr>
+<tr>
+<td><a href="../387-samsung"> Samsung</a></td>
+</tr>
+<tr>
+<td><a href="../388-sony"> Sony</a></td>
+</tr>
+<tr>
+<td><a href="../349-toshiba"> Toshiba</a></td>
+</tr>
+<tr>
+<td><a href="../696-gopro"> GoPro</a></td>
+</tr>
+<tr>
+<td><strong><a href="../690-brand"> All Brand</a></strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="block block-highlighted hidden" id="panduan450">
 <h4 class="title_block accordion-toggle"><span class="fa fa-bars"> </span><span> Panduan Memilih Produk</span></h4>
 <div class="block_content accordion-content">
 <table class="table">
@@ -200,6 +235,26 @@
 </tbody>
 </table>
 </div>
+</div>
+<div class="block block-highlighted hidden" id="panduan153">
+<h4 class="title_block accordion-toggle"><span class="fa fa-bars"> </span><span> Panduan Memilih Produk</span></h4>
+<div class="block_content accordion-content">
+<table class="table">
+<tbody>
+<tr>
+<td><a href="#">Tips Membeli Camcorder</a></td>
+</tr>
+<tr>
+<td><a href="#">Mengenal Jenis Camcorder</a></td>
+</tr>
+<tr>
+<td><a href="#">Tips dan Trik Camcorder</a></td>
+</tr>
+<tr>
+<td><a href="#">Lihat Panduan Lengkap</a></td>
+</tr>
+</tbody>
+</table></div>
 </div>
 <div class="block block-highlighted">
 <h4 class="title_block accordion-toggle"><span class="fa fa-bars"> </span><span> Promo Di Kliknklik</span></h4>
@@ -241,19 +296,32 @@
 </div>
 </div>
 </div>
-</body>
-    <script src="https://rawgit.com/wahyudiansyah01/Desktop/master/varMenu.js" type="text/javascript"></script>
-    <script>
-        menu685.show();
-        
-        var page = [450];
-if(page.indexOf( 450 )>=0){
+<script src="https://rawgit.com/wahyudiansyah01/Desktop/master/varMenu.js"></script>
+<script>// <![CDATA[
+var ui = window.location.pathname.split( '-' )[0].replace("/","");
+//$(".topbrand").css("display","none");
+eval("menu"+ui.toString()+".show()");
+console.log(ui);
+var numberpage = Number(ui);
+ var page = [450];
+if(page.indexOf( numberpage )>=0){
  document.getElementById("topbrand450").classList.remove("hidden");
+ document.getElementById("panduan450").classList.remove("hidden");
 }
 
 var page = [271,684,685,686,687,688,274,378,351,379,380,381,382,383,683];
-if(page.indexOf( ui )>=0){
+if(page.indexOf( numberpage )>=0){
  document.getElementById("topbrand271").classList.remove("hidden");
+ document.getElementById("panduan450").classList.remove("hidden");
 }
-    </script>
-</html>
+var page = [153,631,692,693,694,385,384,386,387,388,349,696,690];
+if(page.indexOf( numberpage )>=0){
+ document.getElementById("topbrand153").classList.remove("hidden");
+ document.getElementById("panduan153").classList.remove("hidden");
+}
+var page = [390,391,393,708,709,396,394,395,716,397,715];
+if(page.indexOf( numberpage )>=0){
+ document.getElementById("panduan450").classList.remove("hidden");
+}
+
+// ]]></script>
