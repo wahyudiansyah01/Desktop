@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta  content="text/html; charset=UTF-8"  http-equiv="content-type">
+    <title>weekend deals kliknklik</title>
+    <style  type="text/css">
+#brosur {  
+  margin-top: 50px;  
+  margin-right: auto;  
+  margin-bottom: 20px;  
+  margin-left: auto;  
+  border-top-style: solid;  
+  border-right-style: solid;  
+  border-bottom-style: solid;  
+  border-left-style: solid;  
+  border-top-width: 1px;  
+  border-right-width: 1px;  
+  border-bottom-width: 1px;  
+  border-left-width: 1px;  
+  width: 800px;  -webkit-box-shadow: 0px 0px 10px rgb(136, 136, 136);
+  box-shadow: 0px 0px 10px rgb(136, 136, 136);  
+  border-top-color: rgb(192, 192, 192);  
+  border-right-color: rgb(192, 192, 192);  
+  border-bottom-color: rgb(192, 192, 192);  
+  border-left-color: rgb(192, 192, 192);  -webkit-border-radius: 20px;
+  border-radius: 20px;
+}
+
+#phone1 {  
+  border-top-width: 7px;  
+  border-right-width: 7px;  
+  border-bottom-width: 7px;  
+  border-left-width: 7px;  
+  border-top-color: rgb(248, 248, 248);  
+  border-right-color: rgb(248, 248, 248);  
+  border-bottom-color: rgb(248, 248, 248);  
+  border-left-color: rgb(248, 248, 248);  
+  background:radial-gradient(ellipse at center, #1e5799 0%,rgba(54, 151, 142, 0.8) 0%,#0C526C 100%,#3d7eaa 100%,#182848 100%,#6e48aa 100%,#6e48aa 100%);
+  border-top-style: solid;  
+  border-right-style: solid;  
+  border-bottom-style: none;  
+  border-left-style: solid;  -webkit-border-radius: 20px 20px 0px 0px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+#header {  
+  background-color: rgb(255, 255, 102);
+}
+
+</style> <link  href="assets/css/bootstrap.css"  rel="stylesheet">
+    <link  href="assets/css/landing-page.css"  rel="stylesheet">
+    <!--     Fonts and icons     -->
+    <link  href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+       rel="stylesheet">
+    <link  href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300"
+       rel="stylesheet"  type="text/css">
+    <link  href="assets/css/pe-icon-7-stroke.css"  rel="stylesheet">
+  </head>
+  <body>
+    <div  id="brosur">
+      <div  id="phone1"><br>
+        <div  id="header"> <br>
+        </div>
+        <br>
+        <br>
+        a<br>
+        vsv<br>
+        svcsa<br>
+        vav<br>
+        sdvsdv<br>
+        dsvd<br>
+        vvdv<br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
+      <br>
+      <br>
+      <br>
+      asd<br>
+      <br>
+      svsv<br>
+      <br>
+      <br>
+      sv<br>
+      v<br>
+    </div>
+  </body>
+</html>
