@@ -1,14 +1,14 @@
-<script src="https://rawgit.com/wahyudiansyah01/Desktop/master/abc.js"></script>
 <script>// <![CDATA[
 $("head").append("<style>.accordion-toggle {cursor: pointer;} .accordion-content {display: none;} .accordion-content.default {display: block;}</style>");
 $(document).ready(function($) {
 $(".accordion-content").css("display","none");
 $(".accordion-content.default").css("display","block");
-
- $('#accordion').find('.accordion-toggle').click(function(){
-
+$('#accordion').find('.accordion-toggle').click(function(){
+var conten = window.getComputedStyle(document.querySelector('.accordion-toggle'), ':after').getPropertyValue('content');
  //Expand or collapse this panel
- $(this).next().slideToggle('fast');
+if(conten.toString()!='""'){
+$(this).next().slideToggle('fast');
+}
 
  //Hide the other panels
 // $(".accordion-content").not($(this).next()).slideUp('fast');
@@ -143,7 +143,7 @@ $(".accordion-content.default").css("display","block");
 </table>
 </div>
 </div>
-    <div class="block block-highlighted" id="brightness">
+<div class="block block-highlighted hidden" id="brightness">
 <h4 class="title_block accordion-toggle"><span class="fa fa-bars"> </span><span> Brightness</span></h4>
 <div class="block_content accordion-content">
 <table class="table">
@@ -158,9 +158,47 @@ $(".accordion-content.default").css("display","block");
 <td><a href="../579-brand-projector#/brightness-4000_andup_lumens"> 4000 Lumens Ke Atas</a></td>
 </tr>
 </tbody>
-</table></div>
+</table>
+</div>
+</div>
+    <div class="block block-highlighted hidden" id="tipescanner">
+<h4 class="title_block accordion-toggle"><span class="fa fa-bars"> </span><span> Tipe Scanner</span></h4>
+<div class="block_content accordion-content">
+<table class="table">
+<tbody>
+<tr>
+<td><a href="../632-portable-scanner"> Portable Scanner</a></td>
+</tr>
+<tr>
+<td><a href="../631-regular-scanner"> Regular Scanner</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+     <div class="block block-highlighted hidden" id="berdasarkanharga">
+<h4 class="title_block accordion-toggle"><span class="fa fa-bars"> </span><span> Berdasarkan Harga</span></h4>
+<div class="block_content accordion-content">
+<table class="table">
+<tbody>
+<tr>
+<td><a href="../52-scanner/price-675000-1999999"> 500 rb - 1,9 juta</a></td>
+</tr>
+<tr>
+<td><a href="../52-scanner/price-2000000-4999999"> 2 juta - 4,9 juta</a></td>
+</tr>
+<tr>
+<td><a href="../52-scanner/price-5000000-9999999"> 5 juta - 9,9 juta</a></td>
+</tr>
+<tr>
+<td><a href="../52-scanner/price-10000000-30000000"> Diatas 10 juta</a></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 
+    
 <div class="block block-highlighted hidden" id="topbrand449">
 <h4 class="title_block accordion-toggle"><span class="fa fa-bars"> </span><span> Top Brand</span></h4>
 <div class="block_content accordion-content">
@@ -245,6 +283,69 @@ $(".accordion-content.default").css("display","block");
 </table>
 </div>
 </div>
+<div class="block block-highlighted hidden" id="topbrand6">
+<h4 class="title_block accordion-toggle"><span class="fa fa-bars"> </span><span> Top Brand</span></h4>
+<div class="block_content accordion-content">
+<table class="table">
+<tbody>
+<tr>
+<td><a href="../459-asus"> Asus</a></td>
+</tr>
+<tr>
+<td><a href="../27-projector-acer"> Acer</a></td>
+</tr>
+<tr>
+<td><a href="../82-projector-benq"> BenQ</a></td>
+</tr>
+<tr>
+<td><a href="../267-casio"> Casio</a></td>
+</tr>
+<tr>
+<td><a href="../83-projector-dell"> Dell</a></td>
+</tr>
+<tr>
+<td><a href="../84-projector-epson"> Epson</a></td>
+</tr>
+<tr>
+<td><a href="../85-projector-hitachi"> Hitachi</a></td>
+</tr>
+<tr>
+<td><a href="../86-projector-infocus"> Infocus</a></td>
+</tr>
+<tr>
+<td><a href="../460-projector-lg"> LG</a></td>
+</tr>
+<tr>
+<td><a href="../87-projector-nec"> NEC</a></td>
+</tr>
+<tr>
+<td><a href="../88-projector-panasonic"> Panasonic</a></td>
+</tr>
+<tr>
+<td><a href="../91-projector-sharp"> Sharp</a></td>
+</tr>
+<tr>
+<td><a href="../92-projector-optoma"> Optoma</a></td>
+</tr>
+<tr>
+<td><a href="../114-projector-microvision"> Microvision</a></td>
+</tr>
+<tr>
+<td><a href="../93-projector-sony"> Sony</a></td>
+</tr>
+<tr>
+<td><a href="../94-projector-viewsonic"> Viewsonic</a></td>
+</tr>
+<tr>
+<td><a href="../96-projector-vivitek"> Vivitek</a></td>
+</tr>
+<tr>
+<td><a href="../304-toshiba"> Toshiba</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <div class="block block-highlighted hidden" id="panduan449">
 <h4 class="title_block accordion-toggle"><span class="fa fa-bars"> </span><span> Panduan Memilih Produk</span></h4>
 <div class="block_content accordion-content">
@@ -322,6 +423,18 @@ if(page.indexOf( numberpage )>=0){
  menu43.show();
  document.getElementById("topbrand43").classList.remove("hidden");
 }
+var page = [6,624,677,675,625,627,619,472,160,459,27,82,267,83,84,85,86,460,87,88,91,92,114,93,94,96,304];
+if(page.indexOf( numberpage )>=0){
+ document.getElementById("brightness").classList.remove("hidden");
+ document.getElementById("topbrand6").classList.remove("hidden");
+}
+
+var page = [374,55,373,464,137,266,632,631];
+if(page.indexOf( numberpage )>=0){
+ document.getElementById("tipescanner").classList.remove("hidden");
+ document.getElementById("berdasarkanharga").classList.remove("hidden");
+}
+
 
 eval("menu"+ui.toString()+".show()");
 // ]]></script>
