@@ -1,0 +1,227 @@
+<script>// <![CDATA[
+$("head").append("<style>.accordion-toggle {cursor: pointer;} .accordion-content {display: none;} .accordion-content.default {display: block;}</style>");
+$(document).ready(function($) {
+$(".accordion-content").css("display","none");
+$(".accordion-content.default").css("display","block");
+$('#accordion').find('.accordion-toggle').click(function(){
+var conten = window.getComputedStyle(document.querySelector('.accordion-toggle'), ':after').getPropertyValue('content');
+ //Expand or collapse this panel
+if(conten.toString()!='""'){
+$(this).next().slideToggle('fast');
+}
+
+ //Hide the other panels
+// $(".accordion-content").not($(this).next()).slideUp('fast');
+
+ });
+ });
+// ]]></script>
+<div id="accordion">
+<div class=" block block-highlighted">
+<h4 class="title_block accordion-toggle"><span class="fa fa-bars"> </span><span> Kategori Produk</span></h4>
+<div class="block_content accordion-content default">
+<table class="table" width="275">
+<tbody id="foto1">
+<tr class="hidden">
+<td style="padding-left: 8px;"><a href="../831-console-video-game">Video Gaming</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 40px;"><a href="../834-console">Console Gaming</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 80px;"><a href="../837-sony">Sony Playstation</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 80px;"><a href="../838-xbox">Microsoft Xbox</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 80px;"><a href="../839-nintendo">Nintendo</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 40px;"><a href="../835-handheld">Gaming Handheld</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 40px;"><a href="../840-aksesoris">Aksesoris Gaming</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 8px;"><a href="../870-activity-tracker">Activity Tracker</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 8px;"><a href="../455-sound-audio">Sound Audio</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 8px;"><a href="../410-gadget">GPS</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 8px;"><a href="../401-media-player">Media Player</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 8px;"><a href="../202-ipod-mp3">Apple Ipod/Mp4</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 40px;"><a href="../677-">Short Throw</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 40px;"><a href="../675-">Portable Mini</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 40px;"><a href="../625-">Professional</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 40px;"><a href="../627-">Home Theater</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 40px;"><a href="../619-">Aksesoris Projector</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 40px;"><a href="../472-">Alat Presentasi</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 40px;"><a href="../160-">Layar Projector</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 40px;"><a href="../374-">Brother</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 40px;"><a href="../55-">Canon</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 40px;"><a href="../373-">Epson</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 40px;"><a href="../464-">Fujitsu</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 40px;"><a href="../137-">Fuji Xerox</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 40px;"><a href="../266-">Magicscan</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 40px;"><a href="../581-interactive-board/brand-ebeam">EBeam</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 40px;"><a href="../581-interactive-board/brand-plus">Plus</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 40px;"><a href="../581-interactive-board/brand-panasonic">Panasonic</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 40px;"><a href="../813-">Manual Pulldown Screen</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 40px;"><a href="../814-">Motorized Screen</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 40px;"><a href="../815-">Tripod Screen</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 40px;"><a href="../816-">Fast Fold Screen</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 40px;"><a href="../822-">Aksesoris Layar Projector</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 40px;"><a href="../241-">Fax</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="block block-highlighted hidden" id="topbrand836">
+<h4 class="title_block accordion-toggle"><span class="fa fa-bars"> </span><span> Top Brand</span></h4>
+<div class="block_content accordion-content">
+<table class="table">
+<tbody>
+<tr>
+<td><a href="../837-sony">Sony Playstation</a> <span class="label label-success">Hot</span></td>
+</tr>
+<tr>
+<td><a href="../838-xbox">Microsoft Xbox</a></td>
+</tr>
+<tr>
+<td><a href="../839-nintendo">Nintendo</a></td>
+</tr>
+<tr>
+<td><strong><a href="../831-console-video-game">Lihat Semua Game Console</a></strong></td>
+</tr>
+<tr>
+<td><a href="../878-fitbit">Fitbit</a></td>
+</tr>
+<tr>
+<td><a href="../876-samsung">Samsung</a></td>
+</tr>
+<tr>
+<td><a href="../871-garmin">Garmin</a></td>
+</tr>
+<tr>
+<td><strong><a href="../870-activity-tracker">Lihat Semua Activity Tracker</a></strong></td>
+</tr>
+<tr>
+<td><a href="../468-papago">GPS Papago</a></td>
+</tr>
+<tr>
+<td><a href="../469-way-way">GPS Way way</a></td>
+</tr>
+<tr>
+<td><a href="../470-garmin">GPS Garmin</a></td>
+</tr>
+<tr>
+<td><strong><a href="../112-jual-gps-navigator-system-murah-review-spesifikasi">Lihat Semua GPS</a></strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="block block-highlighted">
+<h4 class="title_block accordion-toggle"><span class="fa fa-bars"> </span><span> Promo Di Kliknklik</span></h4>
+<div class="block_content accordion-content">
+<table class="table">
+<tbody>
+<tr>
+<td><a href="../promo/">Promo Big Deal</a></td>
+</tr>
+<tr>
+<td><a href="../858-promo-cashback/">Promo Cashback</a></td>
+</tr>
+<tr>
+<td><a href="../content/45-free-ongkos-kirim">Gratis Ongkos Kirim</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="block block-highlighted">
+<h4 class="title_block accordion-toggle"><span class="fa fa-bars"> </span><span> Kategori Terkait</span></h4>
+<div class="block_content accordion-content">
+<table class="table">
+<tbody>
+<tr>
+<td><a href="../3-notebook">Laptop</a></td>
+</tr>
+<tr>
+<td><a href="../79-desktop">PC Desktop</a></td>
+</tr>
+<tr>
+<td><a href="../75-software">Software</a></td>
+</tr>
+<tr>
+<td><a href="../298-monitor-lcd-led">Monitor</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<script src="https://rawgit.com/wahyudiansyah01/Desktop/master/abc.js"></script>
+<script src="https://rawgit.com/wahyudiansyah01/kliknklik-repo/master/htmlbox%20pro/arif/js/menu836.js"></script>
+<script>// <![CDATA[
+var ui = window.location.pathname.split( '-' )[0].replace("/","");
+
+var numberpage = Number(ui);
+var page = [836,836,831, 835, 840,839,837,838, 834];
+if(page.indexOf( numberpage )>=0){
+ document.getElementById("topbrand836").classList.remove("hidden");
+}
+eval("menu"+ui.toString()+".show()");
+// ]]></script>
