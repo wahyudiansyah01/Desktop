@@ -1,0 +1,444 @@
+<script>// <![CDATA[
+$("head").append("<style>.accordion-toggle {cursor: pointer;} .accordion-content {display: none;} .accordion-content.default {display: block;}</style>");
+$(document).ready(function($) {
+$(".accordion-content").css("display","none");
+$(".accordion-content.default").css("display","block");
+$('#accordion').find('.accordion-toggle').click(function(){
+var conten = window.getComputedStyle(document.querySelector('.accordion-toggle'), ':after').getPropertyValue('content');
+ //Expand or collapse this panel
+if(conten.toString()!='""'){
+$(this).next().slideToggle('fast');
+}
+
+ //Hide the other panels
+// $(".accordion-content").not($(this).next()).slideUp('fast');
+
+ });
+ });
+// ]]></script>
+<div id="accordion">
+<div class=" block block-highlighted">
+<h4 class="title_block accordion-toggle"><span class="fa fa-bars"> </span><span> Kategori Produk</span></h4>
+<div class="block_content accordion-content default">
+<table class="table" width="275">
+<tbody id="foto1">
+<tr class="hidden">
+<td style="padding-left: 8px;"><a href="../111-tablet-touch-pad-ipad">PC Tablet</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 40px;"><a href="../559-android">Android</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 80px;"><a href="../559-android#/processor-intel_atom">Intel Atom</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 80px;"><a href="../559-android#/processor-1_single_core">Single Core</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 80px;"><a href="../559-android#/processor-2_dual_core">Dual Core</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 80px;"><a href="../559-android#/processor-4_quad_core">Quad Core</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 80px;"><a href="../559-android#/processor-8_octa_core">Octa Core</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 40px;"><a href="../561-ios-family">iOS</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 40px;"><a href="../562-windows-mobile">Windows</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 80px;"><a href="../562-windows-mobile#/processor-intel_atom">Intel Atom</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 80px;"><a href="../562-windows-mobile#/processor-4_quad_core">Quad Core</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 8px;"><a href="../130-smart-phone">Smartphone</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 40px;"><a href="../565-android">Android</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 80px;"><a href="../565-android#/processor-1_single_core">Single Core</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 80px;"><a href="../565-android#/processor-2_dual_core">Dual Core</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 80px;"><a href="../565-android#/processor-4_quad_core">Quad Core</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 80px;"><a href="../565-android#/processor-8_octa_core">Octa Core</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 40px;"><a href="../567-ios-family">iOS</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 80px;"><a href="../567-ios-family#/processor-1_single_core">Single Core</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 80px;"><a href="../567-ios-family#/processor-2_dual_core">Dual Core</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 40px;"><a href="../568-windows-mobile">Windows</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 40px;"><a href="../566-blackberry">Blackberry</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 80px;"><a href="../566-blackberry#/processor-1_single_core">Single Core</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 80px;"><a href="../566-blackberry#/processor-2_dual_core">Dual Core</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 80px;"><a href="../566-blackberry#/processor-4_quad_core">Quad Core</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 8px;"><a href="../281-aksesoris-tablete">Aksesoris Tablet Smartphone</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 40px;"><a href="../352-power-bank">Power Bank</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 40px;"><a href="../826-adapter-dan-charger">Adapter & Charger</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 40px;"><a href="../165-cases-covers-sleeves">Casing</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 40px;"><a href="../659-mobile-mini-keyboard">Mobile Mini Keyboard</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 40px;"><a href="../398-memory-card">Memori Card</a></td>
+</tr>
+<tr class="hidden">
+<td style="padding-left: 40px;"><a href="../289-other">Lain-lain</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="block block-highlighted hidden" id="topbrand448">
+<h4 class="title_block accordion-toggle"><span class="fa fa-bars"> </span><span> Top Brand</span></h4>
+<div class="block_content accordion-content">
+<table class="table">
+<tbody>
+<tr>
+<td><a href="../190-apple">Apple Ipad</a> <span class="label label-success">Hot</span></td>
+</tr>
+<tr>
+<td><a href="../183-asus">Tablet Asus</a></td>
+</tr>
+<tr>
+<td><a href="../195-lenovo">Tablet Lenovo</a></td>
+</tr>
+<tr>
+<td><a href="../179-samsung">Tablet Samsung</a></td>
+</tr>
+<tr>
+<td><strong><a href="../557-tablet-brand">All Tablet Brand</a></strong></td>
+</tr>
+<tr>
+<td><a href="../340-apple">Apple Iphone</a></td>
+</tr>
+<tr>
+<td><a href="../467-asusl">Smartphone Asus</a></td>
+</tr>
+<tr>
+<td><a href="../355-blackberry">Smartphone Blackberry</a></td>
+</tr>
+<tr>
+<td><a href="../344-lenovo">Smartphone Lenovo</a></td>
+</tr>
+<tr>
+<td><a href="../345-samsung">Smartphone Samsung</a></td>
+</tr>
+<tr>
+<td><strong><a href="../563-smartphone-brand">All Smartphone Brand</a></strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="block block-highlighted hidden" id="topbrand111">
+<h4 class="title_block accordion-toggle"><span class="fa fa-bars"> </span><span> Top Brand</span></h4>
+<div class="block_content accordion-content">
+<table class="table">
+<tbody>
+<tr>
+<td><a href="../186-acer"> Acer</a></td>
+</tr>
+<tr>
+<td><a href="../191-advan"> Advan</a></td>
+</tr>
+<tr>
+<td><a href="../181-aedupac"> Aedupac</a></td>
+</tr>
+<tr>
+<td><a href="../183-asus"> Asus</a></td>
+</tr>
+<tr>
+<td><a href="../190-apple"> Apple</a></td>
+</tr>
+<tr>
+<td><a href="../192-axioo"> Axioo</a></td>
+</tr>
+<tr>
+<td><a href="../412-hp"> HP</a></td>
+</tr>
+<tr>
+<td><a href="../802-huawei"> Huawei</a></td>
+</tr>
+<tr>
+<td><a href="../195-lenovo"> Lenovo</a></td>
+</tr>
+<tr>
+<td><a href="../825-lg"> LG</a></td>
+</tr>
+<tr>
+<td><a href="../255-miumiu"> Miumiu</a></td>
+</tr>
+<tr>
+<td><a href="../179-samsung"> Samsung</a></td>
+</tr>
+<tr>
+<td><a href="../180-sony"> Sony</a></td>
+</tr>
+<tr>
+<td><a href="../264-smartfren"> Smartfren</a></td>
+</tr>
+<tr>
+<td><a href="../258-speed-up"> Speed Up</a></td>
+</tr>
+<tr>
+<td><a href="../557-tablet-brand"> All Brand</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="block block-highlighted hidden" id="topbrand130">
+<h4 class="title_block accordion-toggle"><span class="fa fa-bars"> </span><span> Top Brand</span></h4>
+<div class="block_content accordion-content">
+<table class="table">
+<tbody>
+<tr>
+<td><a href="../406-acer"> Acer</a></td>
+</tr>
+<tr>
+<td><a href="../339-advan"> Advan</a></td>
+</tr>
+<tr>
+<td><a href="../613-alcatel"> Alcatel</a></td>
+</tr>
+<tr>
+<td><a href="../340-apple"> Apple</a></td>
+</tr>
+<tr>
+<td><a href="../467-asus"> Asus</a></td>
+</tr>
+<tr>
+<td><a href="../341-axioo"> Axioo</a></td>
+</tr>
+<tr>
+<td><a href="../355-blackberry"> Blackberry</a></td>
+</tr>
+<tr>
+<td><a href="../586-bolt"> BOLT</a></td>
+</tr>
+<tr>
+<td><a href="../343-eggpadz"> Eggpadz</a></td>
+</tr>
+<tr>
+<td><a href="../356-htc"> HTC</a></td>
+</tr>
+<tr>
+<td><a href="../801-huawei"> Huawei</a></td>
+</tr>
+<tr>
+<td><a href="../344-lenovo"> Lenovo</a></td>
+</tr>
+<tr>
+<td><a href="../357-lg"> LG</a></td>
+</tr>
+<tr>
+<td><a href="../358-nokia"> Nokia</a></td>
+</tr>
+<tr>
+<td><a href="../466-oppo"> Oppo</a></td>
+</tr>
+<tr>
+<td><a href="../345-samsung"> Samsung</a></td>
+</tr>
+<tr>
+<td><a href="../400-smartfren"> Smartfren</a></td>
+</tr>
+<tr>
+<td><a href="../359-sony"> Sony</a></td>
+</tr>
+<tr>
+<td><a href="../571-xiaomi-"> Xiaomi</a></td>
+</tr>
+<tr>
+<td><a href="../563-smartphone-brand"> All Brand</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="block block-highlighted hidden" id="topbrand281">
+<h4 class="title_block accordion-toggle"><span class="fa fa-bars"> </span><span> Top Brand</span></h4>
+<div class="block_content accordion-content">
+<table class="table">
+<tbody>
+<tr>
+<td><a href="../search?controller=search&orderby=position&orderway=desc&search_query=Jelly+Case&submit_search=Search"> Jelly Case</a></td>
+</tr>
+<tr>
+<td><a href="../search?controller=search&orderby=position&orderway=desc&search_query=Targus+case+for+iphone&submit_search=Search"> Targus Case</a></td>
+</tr>
+<tr>
+<td><a href="../search?controller=search&orderby=position&orderway=desc&search_query=Vivan&submit_search=Search"> Powerbank Vivan</a></td>
+</tr>
+<tr>
+<td><a href="../search?controller=search&orderby=position&orderway=desc&search_query=probox&submit_search=Search"> Powerbank Probox</a></td>
+</tr>
+<tr>
+<td><a href="../search?controller=search&orderby=position&orderway=desc&search_query=wacom&submit_search=Search"> Digitizer Wacom</a></td>
+</tr>
+<tr>
+<td><a href="../search?controller=search&orderby=position&orderway=desc&search_query=memory+card+V-GEN&submit_search=Search"> Memory card Vgen</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="block block-highlighted hidden" id="panduan559">
+<h4 class="title_block accordion-toggle"><span class="fa fa-bars"> </span><span>Panduan Memilih Produk</span></h4>
+<div class="block_content accordion-content">
+<table class="table">
+<tbody>
+<tr>
+<td><a href="../content/49-panduan-membeli-tablet">Panduan Membeli PC Tablet</a></td>
+</tr>
+<tr>
+<td><a href="../content/65-pengertian-pc-tablet-panduan-berbelanja">Pengertian PC Tablet</a></td>
+</tr>
+<tr>
+<td><a href="../content/68-berbagai-tipe-pc-tablet-dan-smartphone">Berbagai tipe PC Tablet</a></td>
+</tr>
+<tr>
+<td><a href="../content/67-pc-tablet-vs-smartphone">PC tablet vs Smartphone</a></td>
+</tr>
+<tr>
+<td><a href="../111-tablet-touch-pad-ipad">Lihat Semua Panduan</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="block block-highlighted hidden" id="panduan565">
+<h4 class="title_block accordion-toggle"><span class="fa fa-bars"> </span><span>Panduan Memilih Produk</span></h4>
+<div class="block_content accordion-content">
+<table class="table">
+<tbody>
+<tr>
+<td><a href="../content/66-pengertian-smartphone">Pengertian Smartphone</a></td>
+</tr>
+<tr>
+<td><a href="../content/56-panduan-membeli-smartphone">Panduan Membeli Smartphone</a></td>
+</tr>
+<tr>
+<td><a href="hhttp://kliknklik.com/content/68-berbagai-tipe-pc-tablet-dan-smartphone">Berbagai tipe Smartphone</a></td>
+</tr>
+<tr>
+<td><a href="../content/67-pc-tablet-vs-smartphone">PC tablet vs Smartphone</a></td>
+</tr>
+<tr>
+<td><a href="#">Lihat Semua Panduan</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="block block-highlighted">
+<h4 class="title_block accordion-toggle"><span class="fa fa-bars"> </span><span> Promo Di Kliknklik</span></h4>
+<div class="block_content accordion-content">
+<table class="table">
+<tbody>
+<tr>
+<td><a href="../promo/">Promo Big Deal</a></td>
+</tr>
+<tr>
+<td><a href="../858-promo-cashback/">Promo Cashback</a></td>
+</tr>
+<tr>
+<td><a href="../content/45-free-ongkos-kirim">Gratis Ongkos Kirim</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="block block-highlighted">
+<h4 class="title_block accordion-toggle"><span class="fa fa-bars"> </span><span> Kategori Terkait</span></h4>
+<div class="block_content accordion-content">
+<table class="table">
+<tbody>
+<tr>
+<td><a href="../496-laptop-hybrid">Laptop Hybrid</a></td>
+</tr>
+<tr>
+<td><a href="../165-cases-covers-sleeves">Tablet Case</a></td>
+</tr>
+<tr>
+<td><a href="../352-power-bank">Power Bank</a></td>
+</tr>
+<tr>
+<td><a href="../398-memory-card">Memory Card</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<script src="https://rawgit.com/wahyudiansyah01/Desktop/master/abc.js"></script>
+<script src="https://rawgit.com/wahyudiansyah01/kliknklik-repo/master/htmlbox%20pro/arif/js/menu448.js"></script>
+<script>// <![CDATA[
+var ui = window.location.pathname.split( '-' )[0].replace("/","");
+
+var numberpage = Number(ui);
+var page = [448];
+if(page.indexOf( numberpage )>=0){
+ document.getElementById("topbrand448").classList.remove("hidden");
+}
+var page = [111,186,191,181,183,190,192,412,802,195,825,255,179,180,264,258,557];
+if(page.indexOf( numberpage )>=0){
+    menu111.show();
+ document.getElementById("topbrand111").classList.remove("hidden");
+}
+var page = [559,561,562];
+if(page.indexOf( numberpage )>=0){
+ document.getElementById("panduan559").classList.remove("hidden");
+}
+var page = [130,406,339,613,340,467,341,355,586,343,356,801,344,357,358,466,345,400,359,571,563];
+if(page.indexOf( numberpage )>=0){
+    menu130.show();
+ document.getElementById("topbrand130").classList.remove("hidden");
+}
+var page = [565,567,566,568];
+if(page.indexOf( numberpage )>=0){
+ document.getElementById("panduan565").classList.remove("hidden");
+}
+var page = [281,352,826,165,289];
+if(page.indexOf( numberpage )>=0){
+    menu281.show();
+ document.getElementById("topbrand281").classList.remove("hidden");
+}
+eval("menu"+ui.toString()+".show()");
+
+
+// ]]></script>
